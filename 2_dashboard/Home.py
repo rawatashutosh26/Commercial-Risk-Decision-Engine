@@ -1,12 +1,14 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+import os
 
 st.set_page_config(page_title="Churn Command Center", layout="wide")
-
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 @st.cache_data
 def load_data():
-    return pd.read_csv("data/client_data.csv")
+    data_path = os.path.join(BASE_DIR, "data/client_data.csv")
+    return pd.read_csv(data_path)
 
 df = load_data()
 
