@@ -1,4 +1,4 @@
-# 🛒 Enterprise Customer 360 & Churn Prediction Lakehouse
+# 🛒 Commercial Risk Decision Engine & Churn Prediction Lakehouse
 
 ## 📌 Project Overview
 A full-lifecycle **Data Engineering & Machine Learning** project designed to identify high-value customers and predict churn risks. 
