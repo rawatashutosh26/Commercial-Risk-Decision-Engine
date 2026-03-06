@@ -3,16 +3,19 @@ import pandas as pd
 import joblib
 import shap
 import matplotlib.pyplot as plt
+import os
 
 st.set_page_config(page_title="Explainable AI", layout="wide")
-
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 @st.cache_resource
 def load_model():
-    return joblib.load("models/churn_rf_model.pkl")
+    model_path = os.path.join(BASE_DIR, "models/churn_rf_model.pkl")
+    return joblib.load(model_path)
 
 @st.cache_data
 def load_data():
-    return pd.read_csv("data/client_data.csv")
+    data_path = os.path.join(BASE_DIR, "data/client_data.csv")
+    return pd.read_csv(data_path)
 
 model_artifacts = load_model()
 model = model_artifacts['model']
