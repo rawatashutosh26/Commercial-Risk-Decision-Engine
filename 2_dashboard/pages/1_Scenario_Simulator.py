@@ -1,11 +1,14 @@
 import streamlit as st
 import pandas as pd
 import joblib
+import os
 
 st.set_page_config(page_title="Scenario Simulator", layout="wide")
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 @st.cache_resource
 def load_model():
-    return joblib.load("models/churn_rf_model.pkl")
+    model_path = os.path.join(BASE_DIR, "models/churn_rf_model.pkl")
+    return joblib.load(model_path)
 
 model_artifacts = load_model()
 model = model_artifacts['model']
