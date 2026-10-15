@@ -9,7 +9,7 @@ This solution bridges the gap between heavy data infrastructure and business int
 1. **The Backend (Azure Databricks):** Processes raw transaction logs into a Medallion Lakehouse, engineering a "Customer 360" feature store using RFM Analysis.
 2. **The Frontend (Streamlit):** A deployed, interactive web application allowing stakeholders to simulate "What-If" intervention scenarios and understand model logic via Explainable AI.
 
-## 🏗 Architecture & Tech Stack
+## Architecture & Tech Stack
 * **Cloud & Data Engineering:** Azure Databricks, Apache Spark (PySpark), Delta Lake (Medallion Architecture).
 * **Machine Learning:** Spark MLlib, Scikit-Learn, Random Forest, Logistic Regression.
 * **Frontend Analytics & Explainability:** Streamlit, SHAP (SHapley Additive exPlanations), Plotly.
@@ -18,7 +18,7 @@ This solution bridges the gap between heavy data infrastructure and business int
 
 ---
 
-## ⚙️ Phase 1: Data Engineering Pipeline (Databricks)
+## Phase 1: Data Engineering Pipeline (Databricks)
 ### 1. Ingestion (Bronze Layer)
 * Ingested raw CSV transaction data from the Online Retail dataset.
 * Implemented **Schema Enforcement** to handle data type validation at the source.
