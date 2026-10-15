@@ -2,7 +2,7 @@
 
 **Live Dashboard:** [Click Here](https://commercial-risk-decision-engine-cappkgmfjfjssdpks3xrodu.streamlit.app/)
 
-## 📌 Project Overview
+## Project Overview
 An end-to-end **Data Engineering & Decision Analytics** platform designed to identify high-value customers, predict churn risks, and recommend data-driven retention strategies. 
 
 This solution bridges the gap between heavy data infrastructure and business intelligence. It is divided into two phases:
@@ -48,7 +48,7 @@ This solution bridges the gap between heavy data infrastructure and business int
 
 ---
 
-## 💻 Phase 2: Decision Analytics Web App (Streamlit)
+## Phase 2: Decision Analytics Web App (Streamlit)
 To make the predictive models actionable for business stakeholders, a lightweight version of the model was deployed into a fully interactive web application.
 
 ### 1. Executive Command Center
@@ -73,7 +73,7 @@ To make the predictive models actionable for business stakeholders, a lightweigh
 
 ---
 
-## 🚀 How to Run Locally
+## How to Run Locally
 
 **For the Databricks Pipeline:**
 1. Upload the `.py` notebooks to your Databricks Workspace.
